@@ -1,0 +1,86 @@
+﻿<UserControl x:Class="user_client.View.CreatePostControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="clr-namespace:user_client.ViewModel"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1060">
+    <UserControl.DataContext>
+        <vm:PostViewModel />
+    </UserControl.DataContext>
+    <Grid Margin="160 0 0 0">
+        <Border BorderBrush="#CCC" BorderThickness="1" Margin="40" CornerRadius="4">
+            <Grid Margin="30">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- 제목 입력 및 콤보박스 -->
+                <Grid Grid.Row="0" Margin="0,0,0,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" CornerRadius="6" Background="#F9F9F9" BorderBrush="#CCC" BorderThickness="1.5">
+                        <TextBox x:Name="TitleTextBox"
+                                 BorderThickness="0"
+                                 Padding="10"
+                                 VerticalContentAlignment="Center"
+                                 Background="#e1e1e1"
+                                 HorizontalAlignment="Stretch"/>
+                    </Border>
+
+                    <ComboBox x:Name="TypeComboBox"
+                              Grid.Column="2"
+                              Width="80"
+                              Height="40"
+                              BorderBrush="#CCC"
+                              BorderThickness="1"
+                              Padding="5"
+                              Background="#e1e1e1"
+                              VerticalContentAlignment="Center"
+                              SelectedIndex="0">
+                        <ComboBoxItem Content="notice"/>
+                        <ComboBoxItem Content="normal"/>
+                    </ComboBox>
+                </Grid>
+
+                <!-- 구분선 -->
+                <Rectangle Grid.Row="1" Height="1" Fill="#BFBFBF" />
+
+                <!-- 본문 입력 -->
+                <Border Grid.Row="2" CornerRadius="6" Background="#F9F9F9" BorderBrush="#CCC" BorderThickness="1.5">
+                    <TextBox x:Name="BodyTextBox"
+                             AcceptsReturn="True"
+                             TextWrapping="Wrap"
+                             Background="#e1e1e1"
+                             VerticalScrollBarVisibility="Auto"
+                             BorderThickness="0"
+                             Padding="10"
+                             FontSize="14"
+                             VerticalContentAlignment="Top"
+                             HorizontalAlignment="Stretch"
+                             VerticalAlignment="Stretch"/>
+                </Border>
+
+                <!-- 저장 버튼 -->
+                <Button Grid.Row="3"
+                        Content="저장"
+                        Width="80"
+                        Height="35"
+                        Margin="0,20,0,0"
+                        HorizontalAlignment="Right"
+                        Click="SaveButton_Click"
+                        Background="#d9d9d9"
+                        BorderBrush="#CCC"
+                        BorderThickness="1"/>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>
