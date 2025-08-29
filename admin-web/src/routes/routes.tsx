@@ -1,24 +1,20 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Default from "./layouts/Default";
-import SignUpPage from "./pages/auth/SignUpPage";
+import SignInPage from "./pages/auth/SignInPage";
 
-const router = createBrowserRouter([
+const routes = createBrowserRouter([
   {
     path: "/",
     element: <Default />,
     children: [
       {
-        path: '/sign-up',
-        element: <SignUpPage />
-      },
-      {
         path: '/sign-in',
-        element: <SignUpPage />
+        element: <SignInPage />
       }
     ]
   }
 ])
 
-const Router = () => <RouterProvider router={router} />
+const Router = () => <RouterProvider router={routes} />
 
 export default Router;

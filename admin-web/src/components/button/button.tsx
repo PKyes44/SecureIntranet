@@ -1,7 +1,7 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import type { ComponentProps, PropsWithChildren } from "react";
 
-const buttonVariant = cva("", {
+const buttonVariant = cva("font-noto", {
   variants: {
     outline: {
       true: "border border-black",
@@ -9,14 +9,15 @@ const buttonVariant = cva("", {
     },
     size: {
       xs: "py-1.5 px-10",
-      sm: "px-14 py-1.5",
+      sm: "px-7 py-1.5",
       md: "px-28 py-2.5",
-    },
+      lg: "w-66 px-20 py-3"
+    }, 
     intent: {
-      default: "bg-black",
+      default: "bg-[#8C8C8C]",
       primary: "bg-yellow-300",
       none: "bg-none",
-      disabled: "bg-[#dddddd] bg-opacity-80",
+      disabled: "bg-[#8C8C8C] bg-opacity-80",
       red: "bg-red-200 bg-opacity-80 ",
       green: "bg-green-200 bg-opacity-80",
     },
@@ -31,9 +32,25 @@ const buttonVariant = cva("", {
       black: "text-black",
       primary: "text-yellow-400",
       red: "text-red-400",
-      disabled: " text-[#999999]",
       green: "text-green-400",
     },
+    fontWeight: {
+      thin: "font-pretendard font-thin",
+      light: "font-pretendard font-light",
+      extralight: "font-pretendard font-extralight",
+      medium: "font-pretendard font-medium",
+      regular: "font-pretendard font-normal",
+      semibold: "font-pretendard font-semibold",
+      bold: "font-pretendard font-bold",
+      black: "font-pretendard font-black",
+    },
+    fontSize: {
+      xs: "text-xs",
+      sm: "text-sm",
+      base: "text-base",
+      lg: "text-lg",
+      xl: "text-xl"
+    }
   },
   compoundVariants: [
     { intent: "default", className: "text-white" },
@@ -54,7 +71,6 @@ const buttonVariant = cva("", {
       className: "bg-opacity-40 font-bold",
     },
     {
-      textIntent: "disabled",
       intent: "disabled",
       className: "bg-opacity-40 font-bold",
     },
@@ -69,9 +85,11 @@ const buttonVariant = cva("", {
   defaultVariants: {
     outline: false,
     intent: "default",
-    size: "sm",
+    size: "lg",
     rounded: "sm",
     textIntent: "default",
+    fontWeight: "regular",
+    fontSize: "sm",
   },
 });
 
