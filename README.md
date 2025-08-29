@@ -107,7 +107,7 @@ Tribosss/
 
 --- 
 
-## 주요 링크
+## 🔗 주요 링크
 [Figma 디자인 시안](https://www.figma.com/design/CPR6eyyzLdEt0ZqVM7A8G2/intranet?node-id=0-1&t=g8sXYUoyNzOerK21-1)
 [팀 깃허브](https://github.com/Tribosss)
 
