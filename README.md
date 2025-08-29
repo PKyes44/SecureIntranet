@@ -103,7 +103,7 @@ Tribosss/
 ![ERD](https://file.notion.so/f/f/6b27fb8e-5ab0-4477-ac9d-05091a16120c/a1658fee-22a6-477a-9f60-dff16d76f934/image.png?table=block&id=245b6e92-e209-8084-99d8-f19ed2c70bc4&spaceId=6b27fb8e-5ab0-4477-ac9d-05091a16120c&expirationTimestamp=1756512000000&signature=rpj8dVNk1Y7ckOuJshh6Z74P7k2hvb4BvxoxUYqSxv0&downloadName=image.png)
 
 ## 시스템 구조도
-![구조도](https://file.notion.so/f/f/6b27fb8e-5ab0-4477-ac9d-05091a16120c/a1658fee-22a6-477a-9f60-dff16d76f934/image.png?table=block&id=245b6e92-e209-8084-99d8-f19ed2c70bc4&spaceId=6b27fb8e-5ab0-4477-ac9d-05091a16120c&expirationTimestamp=1756512000000&signature=rpj8dVNk1Y7ckOuJshh6Z74P7k2hvb4BvxoxUYqSxv0&downloadName=image.png)
+![구조도]([https://file.notion.so/f/f/6b27fb8e-5ab0-4477-ac9d-05091a16120c/a1658fee-22a6-477a-9f60-dff16d76f934/image.png?table=block&id=245b6e92-e209-8084-99d8-f19ed2c70bc4&spaceId=6b27fb8e-5ab0-4477-ac9d-05091a16120c&expirationTimestamp=1756512000000&signature=rpj8dVNk1Y7ckOuJshh6Z74P7k2hvb4BvxoxUYqSxv0&downloadName=image.png](https://file.notion.so/f/f/6b27fb8e-5ab0-4477-ac9d-05091a16120c/668a3c15-ce44-42c7-ac53-39ffde6f6fa5/image.png?table=block&id=23ab6e92-e209-80ee-8714-cd60382f22fa&spaceId=6b27fb8e-5ab0-4477-ac9d-05091a16120c&expirationTimestamp=1756512000000&signature=2vmAv09xyyp4PabtW3Cu7_wlFfSbFa5wmtBm3ft5frI&downloadName=image.png))
 
 --- 
 
